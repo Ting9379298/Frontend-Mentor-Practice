@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#container {
+  background-color: white;
+  width: 740px;
+  height: 500px;
+  margin: 180px auto auto auto;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(60, 91, 149, 0.15) 0px 50px 100px -20px,
+    rgba(29, 48, 54, 0.119) 0px 30px 60px -30px;
+}
+
+.small-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
+  height: 500px;
+  padding: 40px;
+}
+
+#result-title {
+  font-size: 1.5em;
+}
+
+#result {
+  border-radius: 30px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+#result-title {
+  color: rgba(230, 230, 230, 180);
+}
+
+#circle {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  align-content: center;
+  margin: 36px auto;
+}
+
+#score-text {
+  position: relative;
+  left: 32%;
+  font-size: 4em;
+  font-weight: 700;
+  color: white;
+}
+
+#score-text-small {
+  position: relative;
+  left: 35%;
+}
+
+#grade {
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: rgba(210, 210, 210, 150);
+}
+
+.rows {
+  border: 1px solid black;
+  width: 290px;
+  height: 100px;
+}
