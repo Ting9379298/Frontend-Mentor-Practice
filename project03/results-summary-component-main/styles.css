@@ -16,6 +16,18 @@ body {
   font-style: normal;
 }
 
+@media screen and (max-width: 375px) {
+  #container {
+    width: 375px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    box-shadow: 0 0 white;
+  }
+}
+
 #container {
   background-color: white;
   width: 740px;
@@ -32,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 370px;
+  width: 375px;
   height: 500px;
   padding: 40px;
 }
@@ -86,8 +98,79 @@ body {
   color: rgba(210, 210, 210, 150);
 }
 
+#summary-title {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  left: -98px;
+  color: hsl(224, 30%, 27%);
+}
+
 .rows {
-  border: 1px solid black;
+  border-radius: 10px;
   width: 290px;
-  height: 100px;
+  height: 60px;
+  padding: 12px;
+  margin: 8px;
+  display: grid;
+  grid-template-columns: 34px auto auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rows p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.title2 {
+  position: relative;
+  left: -44px;
+}
+
+#reaction {
+  background-color: hsl(0, 100%, 97%);
+  color: hsl(0, 100%, 67%);
+}
+
+#memory {
+  background-color: hsl(39, 100%, 97%);
+  color: hsl(39, 100%, 56%);
+}
+
+#verbal {
+  background-color: hsl(166, 100%, 97%);
+  color: hsl(166, 100%, 37%);
+}
+
+#visual {
+  background-color: hsl(234, 85%, 97%);
+  color: hsl(234, 85%, 45%);
+}
+
+.score-each {
+  color: hsl(224, 30%, 27%);
+}
+
+.gray {
+  color: hsl(224, 10%, 65%);
+}
+
+button {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  border: 0;
+  border-radius: 50px;
+  font-size: 1.1em;
+  font-weight: 550;
+  width: 290px;
+  height: 60px;
+  margin-top: 26px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(3px);
+  animation-timing-function: ease-in;
 }
