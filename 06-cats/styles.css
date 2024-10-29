@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --title-color: rgb(246, 246, 246);
+  --background-color: rgb(250, 235, 215);
+  --border-radius: 20px;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--title-color);
+  backdrop-filter: blur(4px);
+  background-color: rgba(240, 248, 255, 0.186);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+header p {
+  font-size: 2rem;
+  font-family: "Bona Nova SC", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+main {
+  margin: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 87vh;
+}
+
+#text {
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+  padding: 30px;
+}
