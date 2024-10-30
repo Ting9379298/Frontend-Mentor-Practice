@@ -46,6 +46,7 @@ a {
 
 #back-btn {
   width: 128px;
+  height: 34px;
   padding: 2px 8px;
   border-radius: 30px;
 
@@ -207,4 +208,90 @@ span {
   max-width: 800px;
   display: block;
   margin: auto;
+}
+
+@media screen and (max-width: 375px) {
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    margin: 0;
+  }
+
+  .line {
+    margin: 40px 0 20px 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 70px;
+    gap: 18px;
+  }
+
+  #back-btn {
+    position: relative;
+    left: -1px;
+    font-size: 0.9rem;
+    width: 90px;
+  }
+
+  #title {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 30px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 5rem;
+    letter-spacing: -5px;
+  }
+
+  #title p {
+    font-size: 1rem;
+  }
+
+  .image-style {
+    width: 90vw;
+    height: 90%;
+  }
+
+  footer {
+    height: 10px;
+    padding: 0;
+  }
+
+  #top-btn {
+    width: 46px;
+    height: 34px;
+    border-radius: 20px;
+    font-weight: 600;
+    padding: 2px 0 0 0;
+    margin: 0;
+
+    position: absolute;
+    top: 3390px;
+    left: 162px;
+  }
+
+  .close {
+    position: absolute;
+    left: 46%;
+    top: 3%;
+    height: 32px;
+    width: 32px;
+  }
+
+  span {
+    font-size: 5rem;
+    position: relative;
+    bottom: 44px;
+    right: 2px;
+  }
 }
