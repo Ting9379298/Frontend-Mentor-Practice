@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #f8edf7;
+  --font-and-line-color: #008dda;
+  --shadow-color: #ab869634;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-and-line-color);
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+  height: 50px;
+  padding: 38px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-and-line-color);
+}
+
+#my-name {
+  grid-column: 3;
+}
+
+#back-btn {
+  width: 128px;
+  padding: 2px 8px;
+  border-radius: 30px;
+
+  position: relative;
+  left: 38px;
+}
+
+.btn {
+  border: 1.6px solid var(--font-and-line-color);
+  text-align: center;
+  font-size: 1.2rem;
+  transition: all 0.1s ease-in;
+  box-shadow: 2px 2px var(--font-and-line-color);
+}
+
+#back-btn:hover {
+  transform: translateX(2px);
+  transform: translateY(2px);
+  box-shadow: 0 0;
+}
+
+.line {
+  border-bottom: 1.5px solid var(--font-and-line-color);
+  margin: 36px 120px 10px 120px;
+}
+
+main {
+  margin: 40px 120px;
+}
+
+#title {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: last baseline;
+  gap: 30px;
+  margin-bottom: 38px;
+}
+
+h1 {
+  font-size: 10rem;
+  font-family: "Cormorant SC", serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -12px;
+}
+
+#title p {
+  font-size: 1.3rem;
+}
+
+#gallery {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-rows: repeat(7 1fr);
+  grid-template-columns: 1fr 1fr;
+  gap: 120px 40px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.image-style {
+  width: 564px;
+  height: 338px;
+  /* border-radius: 18px; */
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.image-style:hover {
+  opacity: 0.82;
+  transform: scale(1.005);
+}
+
+#top-btn {
+  width: 60px;
+  height: 50px;
+  border-radius: 30px;
+  font-weight: 600;
+  padding: 10px 0 0 0;
+
+  position: relative;
+  top: 398px;
+  left: -312px;
+}
+
+#top-btn:hover {
+  transform: translateX(2px);
+  transform: translateY(2px);
+  box-shadow: 0 0;
+}
+
+footer {
+  height: 56px;
+  padding: 24px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
