@@ -135,6 +135,7 @@ h2 {
   height: 80vh;
   display: grid;
   grid-template-areas: "a b b";
+  scroll-snap-stop: always;
 }
 
 #first-red {
@@ -213,6 +214,7 @@ h2 {
   text-align: justify;
   font-size: 1.3rem;
   font-weight: 300;
+  color: var(--blue);
 }
 
 #second-white {
@@ -379,4 +381,24 @@ h3 {
 
 .change-font-style {
   font-style: italic;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0 50px;
+}
+
+footer p {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.1rem;
+  text-shadow: 0 2px 20px rgba(225, 233, 235, 0.489);
 }
