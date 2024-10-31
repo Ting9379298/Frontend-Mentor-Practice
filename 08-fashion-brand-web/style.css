@@ -162,6 +162,7 @@ h2 {
 }
 
 #first-white {
+  background-color: var(--white);
   grid-area: b;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -215,12 +216,14 @@ h2 {
 }
 
 #second-white {
+  background-color: var(--white);
   padding: 120px 152px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 58px;
   border-right: 1px solid var(--blue);
+  border-bottom: 1px solid var(--blue);
 }
 
 #second-white button {
@@ -232,6 +235,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--blue);
 }
 
 .small-squa {
@@ -265,7 +269,6 @@ h3 {
 
 /* third */
 #third {
-  border-top: 1px solid var(--blue);
   border-bottom: 1px solid var(--blue);
   background-color: var(--white);
   height: 100vh;
@@ -274,12 +277,7 @@ h3 {
   padding: 50px 0 0 0;
   grid-template-columns: 1fr 1fr 100px 1fr 1fr 1fr;
   grid-template-rows: 160px 160px 150px 1fr 90px;
-  /* grid-template-areas:
-    "a none b none c none"
-    "d none none none none none"
-    "none e none none none none"
-    "none none none f g none"
-    "none none none none h none"; */
+  overflow: hidden;
 }
 
 #third-btn {
