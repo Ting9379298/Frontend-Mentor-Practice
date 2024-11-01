@@ -13,7 +13,6 @@
 
 .lato-light {
   font-family: "Lato", sans-serif;
-
   font-style: normal;
 }
 
@@ -24,6 +23,28 @@ a {
 
 button {
   cursor: pointer;
+}
+
+/*hover animation*/
+#buy-btn:hover {
+  transform: scale(1.05);
+  background-color: var(--white);
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  font-size: 1.2rem;
+}
+
+#answer-btn:hover,
+#prayer-btn:hover,
+#first button:hover,
+#second button:hover,
+#third button:hover {
+  transform: scale(1.07);
+}
+
+#buy-btn,
+#third button {
+  transition-duration: 0.4s;
 }
 
 nav {
