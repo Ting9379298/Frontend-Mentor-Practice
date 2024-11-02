@@ -73,7 +73,7 @@ main {
 }
 
 .card {
-  background: linear-gradient(rgb(237, 237, 237), rgb(248, 247, 246));
+  background: linear-gradient(rgb(242, 242, 242), rgb(248, 247, 246));
   border-radius: 20px;
   padding: 28px 28px;
   height: 262px;
@@ -129,10 +129,13 @@ button:hover {
 }
 
 .enter-btn {
-  grid-area: btn;
   border-radius: 50px;
   height: 42px;
   width: 90px;
+}
+
+.enter-link {
+  grid-area: btn;
   align-self: self-end;
 }
 
