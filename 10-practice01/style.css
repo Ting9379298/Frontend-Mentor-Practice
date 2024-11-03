@@ -5,3 +5,168 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --color-1: #fff4af;
+  --color-2: #caf4ff;
+  --color-3: #a0deff;
+  --color-4: #5ab2ff;
+  --color-5: #fff9ec;
+
+  --footer-font: #2b8abdf5;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+  font-style: normal;
+}
+
+#cover {
+  width: 100vw;
+  display: grid;
+  gap: 0;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr); */
+  grid-template-areas:
+    "big01 big01 squaS01 squaS02"
+    "big01 big01 squaS03 squaS04";
+  z-index: 200;
+}
+
+.big-squa {
+  width: 50vw;
+}
+
+#cover .big-squa {
+  grid-area: big01;
+  background-color: var(--color-5);
+}
+
+#content .big-squa {
+  grid-area: big02;
+  background-color: var(--color-4);
+}
+
+.rectangle {
+  width: 50vw;
+  grid-area: rec;
+  overflow: hidden;
+}
+
+.rectangle img {
+  width: 50vw;
+}
+
+.small-squa {
+  width: 25vw;
+}
+
+#cover div:nth-child(2) {
+  grid-area: squaS01;
+  background-color: var(--color-2);
+}
+
+#cover div:nth-child(3) {
+  grid-area: squaS02;
+  background-color: var(--color-3);
+}
+
+#cover div:nth-child(4) {
+  grid-area: squaS03;
+  background-color: var(--color-1);
+}
+
+#cover div:nth-child(5) {
+  grid-area: squaS04;
+  background-color: var(--color-4);
+}
+
+#content {
+  width: 100vw;
+  display: grid;
+  margin-bottom: 90vh;
+  grid-template-areas:
+    "squaS05 squaS06 big02 big02"
+    "rec rec big02 big02";
+  z-index: 200;
+}
+
+#content div:nth-child(1) {
+  grid-area: squaS05;
+  background-color: var(--color-1);
+}
+
+#content div:nth-child(2) {
+  grid-area: squaS06;
+  background-color: var(--color-3);
+}
+
+#content div:nth-child(3) {
+  grid-area: rec;
+}
+
+#full-img {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url(./assets/drinks-2.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#full-img img {
+  width: 100%;
+}
+
+footer {
+  background-color: var(--color-5);
+  color: var(--footer-font);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  padding: 80px 100px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 130px 200px;
+  gap: 54px 108px;
+  align-content: end;
+}
+
+h1 {
+  margin: 0 390px 30px 0;
+  grid-column: 1/ -1;
+  grid-row: 1;
+  line-height: 36px;
+  font-weight: 500;
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info a {
+  text-decoration: none;
+  color: var(--footer-font);
+  cursor: pointer;
+}
+
+.info a:hover {
+  color: rgb(206, 43, 29);
+}
+
+.info p,
+.info a {
+  font-weight: 200;
+}
