@@ -46,7 +46,7 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background: linear-gradient(rgb(238, 231, 225), rgb(238, 238, 238));
+  background: linear-gradient(rgb(238, 231, 225), rgb(251, 251, 251));
   /* border-radius: 30px; */
   transition-duration: 0.5s;
 }
@@ -74,7 +74,7 @@ main {
 }
 
 h2 {
-  color: rgb(104, 93, 86);
+  color: rgb(54, 54, 54);
 }
 
 .card {
