@@ -3,16 +3,59 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>p5.js example</title>
+    <title>Hsiang Ting's links page</title>
     <link rel="stylesheet" href="./styles.css" />
+    <!--p5-->
+    <script src="./p5/p5.js"></script>
+    <script src="./sketch.js"></script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <!-- <canvas></canvas> -->
     <main>
-      
-    </main>
+      <div id="avatar" class="shadow2">
+        <img src="./image/my-avatar.png" alt="cloud and grass with blue sky" />
+      </div>
+      <section id="content" class="shadow2">
+        <h1>Hsiang Ting, Chen</h1>
+        <p>I'm a digital creator.</p>
 
-    <script src="./p5/p5.js"></script>
-    <script src="./sketch.js"></script>
+        <div id="buttons">
+          <button class="btn shadow">Web design works</button>
+          <button class="btn shadow">3D works</button>
+        </div>
+
+        <div id="links">
+          <a
+            class="link shadow"
+            href="mailto:ooooc654@gmail.com"
+            target="_blank"
+          >
+            <img src="./image/envelope.svg" alt="" class="link-img" />
+          </a>
+          <a
+            class="link shadow"
+            href="https://www.instagram.com/shang.ting13/profilecard/?igsh=emoyeGIyZ3FiOW9q"
+            target="_blank"
+          >
+            <img src="./image/instagram.svg" alt="" class="link-img" />
+          </a>
+          <a
+            class="link shadow"
+            href="https://github.com/Ting9379298"
+            target="_blank"
+          >
+            <img src="./image/github.svg" alt="" class="link-img" />
+          </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

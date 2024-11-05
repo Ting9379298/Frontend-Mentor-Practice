@@ -1,7 +1,11 @@
+var canvas;
 function setup() {
- // put setup code here
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0, 0);
+  canvas.style("z-index", "-1");
+  canvas.background(205);
 }
 
 function draw() {
-  // put drawing code here
+  background(239);
 }
