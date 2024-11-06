@@ -5,31 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hsiang Ting's links page</title>
     <link rel="stylesheet" href="./styles.css" />
-    <!--p5-->
-    <script src="./p5/p5.js"></script>
-    <script src="./sketch.js"></script>
+
     <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Maru+Gothic&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
-    <!-- <canvas></canvas> -->
+    <nav>
+      <p id="lang" class="cn_font">中文</p>
+    </nav>
     <main>
       <div id="avatar" class="shadow2">
         <img src="./image/my-avatar.png" alt="cloud and grass with blue sky" />
       </div>
       <section id="content" class="shadow2">
-        <h1>Hsiang Ting, Chen</h1>
-        <p>I'm a digital creator.</p>
+        <h1 id="name" class="">Hsiang Ting, Chen</h1>
+        <p id="intro" class="">I'm a digital creator.</p>
 
         <div id="buttons">
-          <button class="btn shadow">Web design works</button>
-          <button class="btn shadow">3D works</button>
+          <button class="btn shadow" id="web_btn">Web design works</button>
+          <button class="btn shadow" id="btn2">3D works</button>
         </div>
 
         <div id="links">
@@ -57,5 +57,6 @@
         </div>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
